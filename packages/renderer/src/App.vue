@@ -10,7 +10,7 @@ const APP_VERSION = import.meta.env.VITE_APP_VERSION;
   <img
     alt="Vue logo"
     src="../assets/logo.svg"
-    width="150"
+    width="90"
   />
 
   <p>
