@@ -4,8 +4,12 @@ import {URL} from 'node:url';
 
 async function createWindow() {
   const browserWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+
     show: false, // Use the 'ready-to-show' event to show the instantiated BrowserWindow.
     webPreferences: {
+      // devTools: false,
       nodeIntegration: false,
       contextIsolation: true,
       sandbox: false, // Sandbox disabled because the demo of preload script depend on the Node.js api

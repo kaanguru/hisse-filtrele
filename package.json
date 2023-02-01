@@ -54,6 +54,7 @@
     "vue-tsc": "1.0.24"
   },
   "dependencies": {
+    "daisyui": "^2.49.0",
     "electron-updater": "5.3.0",
     "vue": "3.2.45"
   }
