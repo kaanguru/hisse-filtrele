@@ -12,7 +12,9 @@ const APP_VERSION = import.meta.env.VITE_APP_VERSION;
     src="../assets/logo.svg"
     width="90"
   />
-
+  <h1 className="text-3xl font-bold underline">
+    Hello world!
+  </h1>
   <p>
     <!-- Example how to inject current app version to UI -->
     App version: {{ APP_VERSION }}
