@@ -1,4 +1,7 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+console.log('benim güzel apim:'+import.meta.env.VITE_VANTAGE_KEY);
+
+</script>
 
 <template>
   <div id="app">
