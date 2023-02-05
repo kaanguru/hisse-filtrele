@@ -3,4 +3,4 @@ packages:
   - "scripts/**"
   - 'packages/**'
   # if required, exclude some directories
-  - '!**/test/**'
+  - '!**/tests/**'

@@ -56,8 +56,9 @@
   },
   "dependencies": {
     "@uifabric-vue/office-ui-fabric-vue": "^8.5.3",
-    "daisyui": "^2.49.0",
+    "daisyui": "^2.50.0",
     "electron-updater": "5.3.0",
-    "vue": "3.2.45"
+    "vue": "3.2.45",
+    "yahoo-finance2": "^2.3.10"
   }
 }
