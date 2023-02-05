@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-console.log('benim güzel apim:'+import.meta.env.VITE_VANTAGE_KEY);
+// console.log('benim güzel apim:'+import.meta.env.VITE_VANTAGE_KEY);
 
 </script>
 
