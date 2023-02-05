@@ -27,7 +27,8 @@
     "typecheck:renderer": "vue-tsc --noEmit -p packages/renderer/tsconfig.json",
     "typecheck": "yarn typecheck:main && yarn typecheck:preload && yarn typecheck:renderer",
     "postinstall": "cross-env ELECTRON_RUN_AS_NODE=1 electron scripts/update-electron-vendors.mjs",
-    "format": "npx prettier --write \"**/*.{js,mjs,cjs,ts,mts,cts,vue,json}\""
+    "format": "npx prettier --write \"**/*.{js,mjs,cjs,ts,mts,cts,vue,json}\"",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@types/node": "18.11.18",
@@ -54,6 +55,7 @@
     "vue-tsc": "1.0.24"
   },
   "dependencies": {
+    "@uifabric-vue/office-ui-fabric-vue": "^8.5.3",
     "daisyui": "^2.49.0",
     "electron-updater": "5.3.0",
     "vue": "3.2.45"
