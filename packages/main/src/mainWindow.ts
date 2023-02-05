@@ -1,7 +1,6 @@
 import {app, BrowserWindow} from 'electron';
 import {join} from 'node:path';
 import {URL} from 'node:url';
-
 async function createWindow() {
   const browserWindow = new BrowserWindow({
     width: 800,
@@ -30,7 +29,7 @@ async function createWindow() {
     browserWindow?.show();
 
     if (import.meta.env.DEV) {
-      // browserWindow?.webContents.openDevTools();
+      browserWindow?.webContents.openDevTools();
     }
   });
 
@@ -54,9 +53,9 @@ async function createWindow() {
  */
 export async function restoreOrCreateWindow() {
   let window = BrowserWindow.getAllWindows().find(w => !w.isDestroyed());
-
   if (window === undefined) {
     window = await createWindow();
+    
   }
 
   if (window.isMinimized()) {
